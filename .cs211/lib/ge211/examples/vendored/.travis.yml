@@ -1,0 +1,38 @@
+language: cpp
+dist: bionic
+
+addons:
+  apt:
+    packages:
+    - libsdl2-dev
+    - libsdl2-mixer-dev
+    - libsdl2-ttf-dev
+    - libsdl2-image-dev
+
+before_install:
+  - |
+    export PREFIX=${TRAVIS_BUILD_DIR}/../deps
+    export PATH="${PREFIX}/bin:${PATH}"
+    mkdir -p ${PREFIX}
+
+install:
+# Upgrade CMake:
+  - |
+    CMAKE_VERSION=3.15.3
+    CMAKE_URL=https://github.com/Kitware/CMake/releases/download/v${CMAKE_VERSION}/cmake-${CMAKE_VERSION}-Linux-x86_64.tar.gz
+    travis_retry wget --quiet -O- ${CMAKE_URL} | \
+        tar --strip-components=1 -xz -C ${PREFIX} &&
+    cmake --version
+
+cache:
+  directories:
+    - ../deps
+
+before_script:
+  - rm 3rdparty/ge211
+  - git clone https://github.com/tov/ge211.git 3rdparty/ge211
+  - cmake -S . -B build
+
+script:
+  - cmake --build build -- -j2
+

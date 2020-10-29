@@ -1,0 +1,21 @@
+"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Northwestern\1st Year - 2019 - Winter\COMP_SCI_211\FinalProject\fp"
+-- The CXX compiler identification is GNU 8.1.0
+-- Check for working CXX compiler: C:/MinGW/bin/g++.exe
+-- Check for working CXX compiler: C:/MinGW/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found SDL: mingw32;-mwindows;C:/MinGW/lib/libSDL2main.a;C:/MinGW/lib/libSDL2.dll.a  
+-- Found SDL2_image: C:/MinGW/lib/libSDL2_image.dll.a (found version "..") 
+-- Found SDL2_mixer: C:/MinGW/lib/libSDL2_mixer.dll.a (found version "..") 
+-- Found SDL2_ttf: C:/MinGW/lib/libSDL2_ttf.dll.a (found version "..") 
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Northwestern/1st Year - 2019 - Winter/COMP_SCI_211/FinalProject/fp/cmake-build-debug

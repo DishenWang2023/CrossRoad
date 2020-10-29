@@ -1,0 +1,1 @@
+../3rdparty/ge211/examples/installed/fireworks.cxx

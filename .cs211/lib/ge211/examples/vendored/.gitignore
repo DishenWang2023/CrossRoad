@@ -1,0 +1,11 @@
+# CMake build directories:
+build/
+cmake-build-*/
+
+# CLion project settings:
+.idea/
+
+# MacOS Finder.app directory preferences:
+.DS_Store
+._.DS_Store
+
